@@ -21,9 +21,9 @@ set scrolloff=9
 set expandtab
 set nu
 set termguicolors
-set relativenumber
 set mouse=a
 set syntax=on
+set signcolumn=
 set encoding=UTF-8
 set undofile                 "turn on the feature  
 set undodir=~/.nvim  "directory where the undo files will be stored

@@ -1,4 +1,4 @@
-map tag :Vista<CR>
+map tag :Vista coc<CR>
 " How each level is indented and what to prepend.
 " This could make the display more compact or more spacious.
 " e.g., more compact: [" ", ""]

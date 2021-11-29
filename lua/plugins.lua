@@ -13,12 +13,14 @@ return require('packer').startup({function(use)
     use 'kevinhwang91/rnvimr'
     --Tag List
     use 'liuchengxu/vista.vim'
+    use 'simrat39/symbols-outline.nvim'
     --Indention Line
     use 'Yggdroot/indentLine'
     --Start Page
     use 'mhinz/vim-startify'
     --Finder
     use 'liuchengxu/vim-clap'
+    use 'nvim-telescope/telescope-symbols.nvim'
     use {'nvim-telescope/telescope.nvim',requires = { {'nvim-lua/plenary.nvim'} }}
     --Icons
     use 'ryanoasis/vim-devicons'
@@ -43,21 +45,10 @@ return require('packer').startup({function(use)
     use 'mg979/vim-visual-multi'
     --Scroll Bar
     use 'zhouguannan/scrollbar.nvim'
+    --Comment
+    use {'numToStr/Comment.nvim',config = function()require('Comment').setup()end}
     --LSP
-    use 'neovim/nvim-lspconfig'
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-vsnip'
-    use 'hrsh7th/vim-vsnip'
-    use 'onsails/lspkind-nvim'
-    use 'williamboman/nvim-lsp-installer'
-    use {'uga-rosa/cmp-dictionary', after = "nvim-cmp"}
-    use 'kosayoda/nvim-lightbulb'
-    use 'hrsh7th/cmp-path'
-
+    use {'neoclide/coc.nvim', run = 'yarn install'}
     use {"folke/trouble.nvim",requires = "kyazdani42/nvim-web-devicons",config = function()require("trouble").setup {
 
             position = "bottom", -- position of the list can be: bottom, top, left, right
