@@ -17,7 +17,6 @@ require('plugins-config/gitsigns')
 require('plugins-config/toggleterm')
 require('plugins-config/nvim-treesitter')
 require('plugins-config/comment')
-require('plugins-config/symbols-outline')
 vim.cmd('source ~/.config/nvim/lua/plugins-config/coc.vim')
 
 --Load Vim Config
