@@ -7,7 +7,7 @@
 ### 1.Install
 
 ```bash
-sudo pacman -S neovim lua lazygit nodejs
+sudo pacman -S neovim lua lazygit nodejs ranger yarn npm python-pip
 pip install pynvim
 npm i -g neovim
 ```
@@ -35,6 +35,12 @@ nvim
 
 ```vim
 :PackerInstall
+:PackerSync
+```
+
+```bash
+cd ~/.local/share/nvim/site/pack/packer/start/coc.nvim/
+yarn install
 ```
 ### CHANGELOG
 change from native-lsp and nvim-cmp back to coc.nvim
