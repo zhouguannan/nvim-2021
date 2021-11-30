@@ -13,7 +13,6 @@ return require('packer').startup({function(use)
     use 'kevinhwang91/rnvimr'
     --Tag List
     use 'liuchengxu/vista.vim'
-    use 'simrat39/symbols-outline.nvim'
     --Indention Line
     use 'Yggdroot/indentLine'
     --Start Page
