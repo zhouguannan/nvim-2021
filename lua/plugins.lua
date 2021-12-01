@@ -48,6 +48,8 @@ return require('packer').startup({function(use)
     use {'numToStr/Comment.nvim',config = function()require('Comment').setup()end}
     --LSP
     use {'neoclide/coc.nvim', run = 'yarn install'}
+    use 'm-pilia/vim-ccls'
+
     use {"folke/trouble.nvim",requires = "kyazdani42/nvim-web-devicons",config = function()require("trouble").setup {
 
             position = "bottom", -- position of the list can be: bottom, top, left, right
